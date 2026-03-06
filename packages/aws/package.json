@@ -1,5 +1,15 @@
 {
-  "dependencies": {
-    "@aws-sdk/client-lambda": ""
+  "name": "@qi/aws",
+  "version": "0.0.1",
+  "description": "Monorepo for qi",
+  "author": "Benjamin Houdu",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+  	"compile": "tsc",
+    "build":"echo ho"
   }
 }

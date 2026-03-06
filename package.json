@@ -8,11 +8,18 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "scripts": {
+    "clean": "rimraf -g \"packages/**/lib\" \"packages/**/*.tsbuildinfo\"",
+    "compile": "tsc -b tsconfig.build.json",
+    "format": "npm run prettier -- --write",
+    "prepare": "npm run compile"
+  },
+  "devDependencies": {
+    "rimraf": "6.1.3",
+    "typescript": "5.9.3"
+  },
   "workspaces": [
     "packages/aws",
     "packages/client"
   ]
-  "scripts": {
-    "build":"echo ho"
-  }
 }
